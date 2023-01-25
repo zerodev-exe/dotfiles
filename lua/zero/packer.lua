@@ -18,6 +18,21 @@ return require('packer').startup(function(use)
       end
   })
 
+
+  --My stuff is going here!
+  use('lervag/vimtex')
+  use('terryma/vim-multiple-cursors')
+  use('preservim/nerdcommenter')
+
+  -- Lua
+use {
+  "folke/todo-comments.nvim",
+  requires = "nvim-lua/plenary.nvim",
+}
+
+--This is where my stuff ends
+
+
   use({'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'})
   use('nvim-treesitter/playground')
   use('theprimeagen/harpoon')
