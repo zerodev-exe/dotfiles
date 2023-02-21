@@ -7,7 +7,7 @@ require('mason-lspconfig').setup()
 lsp.preset('recommended')
 
 lsp.on_attach(function(client, bufnr)
-	local opts = {buffer = fufnr, remap = false}
+	local opts = {buffer = bufnr, remap = false}
 	vim.keymap.set('n', "<leader>gd", function() vim.lsp.buf.definition() end, opts)
 end)
 

@@ -1,3 +1,3 @@
 require('zero.packer')
-require('zero.remap')
 require('zero.set')
+require('zero.remap')
