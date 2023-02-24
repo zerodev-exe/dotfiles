@@ -163,6 +163,12 @@ _G.packer_plugins = {
     path = "/Users/zero/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
   },
+  ["nvim-custom-diagnostic-highlight"] = {
+    config = { "\27LJ\2\nR\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup%nvim-custom-diagnostic-highlight\frequire\0" },
+    loaded = true,
+    path = "/Users/zero/.local/share/nvim/site/pack/packer/start/nvim-custom-diagnostic-highlight",
+    url = "https://github.com/Kasama/nvim-custom-diagnostic-highlight"
+  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/Users/zero/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
@@ -199,7 +205,6 @@ _G.packer_plugins = {
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
   ["todo-comments.nvim"] = {
-    config = { "\27LJ\2\n�\t\0\0\a\0001\0;6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\3\0005\3\3\0005\4\a\0005\5\4\0005\6\5\0=\6\6\5=\5\b\0045\5\t\0=\5\n\0045\5\v\0=\5\f\0045\5\r\0005\6\14\0=\6\6\5=\5\15\0045\5\16\0005\6\17\0=\6\6\5=\5\18\0045\5\19\0005\6\20\0=\6\6\5=\5\21\0045\5\22\0005\6\23\0=\6\6\5=\5\24\4=\4\25\0035\4\26\0=\4\27\0035\4\28\0004\5\0\0=\5\29\4=\4\30\0035\4 \0005\5\31\0=\5!\0045\5\"\0=\5#\0045\5$\0=\5%\0045\5&\0=\5'\0045\5(\0=\5)\0045\5*\0=\5+\4=\4,\0035\4-\0005\5.\0=\5/\4=\0040\3>\3\1\2B\0\2\1K\0\1\0\vsearch\targs\1\6\0\0\18--color=never\17--no-heading\20--with-filename\18--line-number\r--column\1\0\2\fpattern\18\\b(KEYWORDS):\fcommand\arg\vcolors\ttest\1\3\0\0\15Identifier\f#FF00FF\fdefault\1\3\0\0\15Identifier\f#7C3AED\thint\1\3\0\0\19DiagnosticHint\f#10B981\tinfo\1\3\0\0\19DiagnosticInfo\f#2563EB\fwarning\1\4\0\0\19DiagnosticWarn\15WarningMsg\f#FBBF24\nerror\1\0\0\1\4\0\0\20DiagnosticError\rErrorMsg\f#DC2626\14highlight\fexclude\1\0\t\17max_line_len\3�\3\18comments_only\2\fpattern\22.*<(KEYWORDS)\\s*:\nafter\afg\fkeyword\twide\vbefore\5\22multiline_context\3\n\22multiline_pattern\a^.\14multiline\2\14gui_style\1\0\2\afg\tNONE\abg\tBOLD\rkeywords\tTEST\1\4\0\0\fTESTING\vPASSED\vFAILED\1\0\2\ncolor\ttest\ticon\t⏲ \tNOTE\1\2\0\0\tINFO\1\0\2\ncolor\thint\ticon\t \tPERF\1\4\0\0\nOPTIM\16PERFORMANCE\rOPTIMIZE\1\0\1\ticon\t \tWARN\1\3\0\0\fWARNING\bXXX\1\0\2\ncolor\fwarning\ticon\t \tHACK\1\0\2\ticon\t \ncolor\fwarning\tTODO\1\0\2\ticon\t \ncolor\tinfo\bFIX\1\0\0\balt\1\5\0\0\nFIXME\bBUG\nFIXIT\nISSUE\1\0\2\ncolor\nerror\ticon\t \1\0\3\19merge_keywords\2\18sign_priority\3\b\nsigns\2\nsetup\18todo-comments\frequire\0" },
     loaded = true,
     path = "/Users/zero/.local/share/nvim/site/pack/packer/start/todo-comments.nvim",
     url = "https://github.com/folke/todo-comments.nvim"
@@ -238,18 +243,14 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: nvim-autopairs
-time([[Config for nvim-autopairs]], true)
-try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
-time([[Config for nvim-autopairs]], false)
--- Config for: todo-comments.nvim
-time([[Config for todo-comments.nvim]], true)
-try_loadstring("\27LJ\2\n�\t\0\0\a\0001\0;6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\3\0005\3\3\0005\4\a\0005\5\4\0005\6\5\0=\6\6\5=\5\b\0045\5\t\0=\5\n\0045\5\v\0=\5\f\0045\5\r\0005\6\14\0=\6\6\5=\5\15\0045\5\16\0005\6\17\0=\6\6\5=\5\18\0045\5\19\0005\6\20\0=\6\6\5=\5\21\0045\5\22\0005\6\23\0=\6\6\5=\5\24\4=\4\25\0035\4\26\0=\4\27\0035\4\28\0004\5\0\0=\5\29\4=\4\30\0035\4 \0005\5\31\0=\5!\0045\5\"\0=\5#\0045\5$\0=\5%\0045\5&\0=\5'\0045\5(\0=\5)\0045\5*\0=\5+\4=\4,\0035\4-\0005\5.\0=\5/\4=\0040\3>\3\1\2B\0\2\1K\0\1\0\vsearch\targs\1\6\0\0\18--color=never\17--no-heading\20--with-filename\18--line-number\r--column\1\0\2\fpattern\18\\b(KEYWORDS):\fcommand\arg\vcolors\ttest\1\3\0\0\15Identifier\f#FF00FF\fdefault\1\3\0\0\15Identifier\f#7C3AED\thint\1\3\0\0\19DiagnosticHint\f#10B981\tinfo\1\3\0\0\19DiagnosticInfo\f#2563EB\fwarning\1\4\0\0\19DiagnosticWarn\15WarningMsg\f#FBBF24\nerror\1\0\0\1\4\0\0\20DiagnosticError\rErrorMsg\f#DC2626\14highlight\fexclude\1\0\t\17max_line_len\3�\3\18comments_only\2\fpattern\22.*<(KEYWORDS)\\s*:\nafter\afg\fkeyword\twide\vbefore\5\22multiline_context\3\n\22multiline_pattern\a^.\14multiline\2\14gui_style\1\0\2\afg\tNONE\abg\tBOLD\rkeywords\tTEST\1\4\0\0\fTESTING\vPASSED\vFAILED\1\0\2\ncolor\ttest\ticon\t⏲ \tNOTE\1\2\0\0\tINFO\1\0\2\ncolor\thint\ticon\t \tPERF\1\4\0\0\nOPTIM\16PERFORMANCE\rOPTIMIZE\1\0\1\ticon\t \tWARN\1\3\0\0\fWARNING\bXXX\1\0\2\ncolor\fwarning\ticon\t \tHACK\1\0\2\ticon\t \ncolor\fwarning\tTODO\1\0\2\ticon\t \ncolor\tinfo\bFIX\1\0\0\balt\1\5\0\0\nFIXME\bBUG\nFIXIT\nISSUE\1\0\2\ncolor\nerror\ticon\t \1\0\3\19merge_keywords\2\18sign_priority\3\b\nsigns\2\nsetup\18todo-comments\frequire\0", "config", "todo-comments.nvim")
-time([[Config for todo-comments.nvim]], false)
 -- Config for: tokyonight
 time([[Config for tokyonight]], true)
 try_loadstring("\27LJ\2\n:\0\0\3\0\3\0\0056\0\0\0009\0\1\0'\2\2\0B\0\2\1K\0\1\0\27colorscheme tokyonight\bcmd\bvim\0", "config", "tokyonight")
 time([[Config for tokyonight]], false)
+-- Config for: nvim-autopairs
+time([[Config for nvim-autopairs]], true)
+try_loadstring("\27LJ\2\n@\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\19nvim-autopairs\frequire\0", "config", "nvim-autopairs")
+time([[Config for nvim-autopairs]], false)
 -- Config for: LspUI.nvim
 time([[Config for LspUI.nvim]], true)
 try_loadstring("\27LJ\2\n3\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\nLspUI\frequire\0", "config", "LspUI.nvim")
@@ -262,6 +263,10 @@ time([[Config for lspsaga.nvim]], false)
 time([[Config for alpha-nvim]], true)
 try_loadstring("\27LJ\2\n`\0\0\5\0\5\0\n6\0\0\0'\2\1\0B\0\2\0029\0\2\0006\2\0\0'\4\3\0B\2\2\0029\2\4\2B\0\2\1K\0\1\0\vconfig\26alpha.themes.startify\nsetup\nalpha\frequire\0", "config", "alpha-nvim")
 time([[Config for alpha-nvim]], false)
+-- Config for: nvim-custom-diagnostic-highlight
+time([[Config for nvim-custom-diagnostic-highlight]], true)
+try_loadstring("\27LJ\2\nR\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup%nvim-custom-diagnostic-highlight\frequire\0", "config", "nvim-custom-diagnostic-highlight")
+time([[Config for nvim-custom-diagnostic-highlight]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
