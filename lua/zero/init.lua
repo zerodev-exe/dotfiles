@@ -1,3 +1,7 @@
-require('zero.packer')
-require('zero.set')
-require('zero.remap')
+require("zero.set")
+require("zero.remap")
+require("zero.packer")
+
+vim.g.netrw_browse_split = 0
+vim.g.netrw_banner = 0
+vim.g.netrw_winsize = 25
