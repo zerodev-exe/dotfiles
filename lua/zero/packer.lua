@@ -67,6 +67,7 @@ return require('packer').startup(function(use)
   --NOTE: Everything that's above this comment has been made by ThePrimeagen he is a fantastic youtuber here is the link to watch his video
 
   use("vim-airline/vim-airline")
+  use 'vim-airline/vim-airline-themes'
   use 'tpope/vim-commentary'
   use 'lervag/vimtex'
   use 'terryma/vim-multiple-cursors'

@@ -1,5 +1,6 @@
 # Zer0's dotfiles
-These are my dotfiles
+
+## These are my dotfiles
 
 Copy and paste this in your terminal
 

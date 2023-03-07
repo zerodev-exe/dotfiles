@@ -12,3 +12,5 @@ function ColorMyPencils(color)
 end
 
 ColorMyPencils()
+
+vim.cmd("AirlineTheme angr")
