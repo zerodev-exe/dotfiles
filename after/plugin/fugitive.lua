@@ -40,7 +40,7 @@ function git_commit_and_push()
   vim.fn.system('git commit -m "' .. commit_msg .. '"')
 
   -- push changes using fugitive
-  vim.fn.system('Git push')
+  vim.fn.system('git push')
 end
 
 -- map <leader>gp to execute git_commit_and_push()
